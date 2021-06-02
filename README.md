@@ -1,6 +1,6 @@
-# Deep Dive Into Node
+# Optimizing Applications with Node.js
 
-# This repo will serve as a point of reference for further learning related to Node - a runtime environment for executing JS Code
+This repo will serve as a point of reference for further learning related to Node - a runtime environment for executing JS Code
 
 ## Node was created by Ryan Dahl and is ...
 
