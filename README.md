@@ -15,11 +15,6 @@ This repo will serve as a point of reference for further learning related to Nod
 
 ## Module System
 
-- OS
-- fs
-- events
-- http
-
 Every file in a node application is considered a **module** and only availble within the file in which it's a defined unless exported using the export property on the module object. Each Module is an JSON Object.
 
 ```
@@ -48,3 +43,44 @@ Module {
 ## Module Function Wrapper System
 
 Each module is wrapped in a function
+
+## Native Node Modules
+
+- path
+
+```
+const path = require("path");
+
+let pathObj = path.parse(__filename);
+
+/* pathObj returns an object with a lot of useful information within the key:value pairs
+ such as the root, directory path, the base, the extention of the file and the name of the file */
+
+  {
+  root: '/',
+  dir: '/Users/userInfo/NameOfAFolder/NameOfAnotherFolder',
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+  }
+
+```
+
+- OS
+- path
+- fs --> working with the file system
+
+  ```const fs = require('fs')
+    fs.readdir('./', (err, files) => {
+      if(err) console.log('Error', err)
+      else console.log('Files Array', files)
+    })
+
+  // returns an ARRAY of strings with names of all files within this directory
+  // ['.git', '.app.js', 'logger.js' ]
+
+
+  ```
+
+- events
+- http
