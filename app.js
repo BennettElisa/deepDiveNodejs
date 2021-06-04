@@ -1,5 +1,11 @@
+const EventEmitter = require("events");
+const emmitter = new EventEmitter(); // object
 const log = require("./logger");
+// const os = require("os");
 
-log("jelly");
+// Register a listener
+emmitter.on("messageLogged", envArg => {
+  console.log("listener called", envArg);
+});
 
-const os = require("os");
+log("message");

@@ -79,8 +79,8 @@ let pathObj = path.parse(__filename);
   // returns an ARRAY of strings with names of all files within this directory
   // ['.git', '.app.js', 'logger.js' ]
 
-
   ```
 
-- events
+- events - signal that something has happened in our application
+  - Event Class - EventEmitter --> The Event class is a container for different methods and properties
 - http
